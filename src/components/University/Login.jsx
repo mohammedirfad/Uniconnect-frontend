@@ -118,12 +118,12 @@ export default function Login() {
                         />
                     </div>
                     {error && <p className="text-sm text-red-500">{error}</p>}
-                    <a
-                        href="#"
+                    <span
+                        
                         className="text-xs text-purple-600 hover:underline"
                     >
                         Forget Password?
-                    </a>
+                    </span>
                     <div className="mt-6">
                         <button
                             className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600"

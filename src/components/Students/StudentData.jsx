@@ -34,7 +34,7 @@ function StudentData() {
       };
 
       fetchUser();
-  }, [currentPage,token]);
+  }, [currentPage,token,id]);
 
 
      if (isLoading) {

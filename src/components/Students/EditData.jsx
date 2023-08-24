@@ -34,11 +34,12 @@ const [error, setError] = useState(null);
        catch(err){
          
           setError(err?.response?.data?.message);
+          console.log(error);
        }
     };    
       fetchUser();
  
- }, [token]);
+ }, [token,id]);
 
 
 
