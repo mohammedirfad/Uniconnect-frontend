@@ -4,7 +4,7 @@ import { UniversityLogin } from '../../Api/Services/UniversityAuth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useDispatch } from "react-redux";
-import { setLogin, setLogout } from '../../store/features/authSlice'
+import { setLogin } from '../../store/features/authSlice'
 
 
 export default function Login() {

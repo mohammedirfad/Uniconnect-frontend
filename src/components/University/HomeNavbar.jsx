@@ -1,6 +1,6 @@
 import React from 'react'
 import { GiBurningForest } from 'react-icons/gi';
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { setLogin, setLogout } from '../../store/features/authSlice';
 import { useSelector, useDispatch } from 'react-redux';
 

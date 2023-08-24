@@ -4,12 +4,11 @@ import {Link} from "react-router-dom"
 import {GiHamburgerMenu} from "react-icons/gi"
 import {FaUserAlt} from "react-icons/fa"
 import {BsBuildingFill} from "react-icons/bs"
-import {BsBagFill} from "react-icons/bs"
-import {TbBusinessplan} from "react-icons/tb"
+
 
 const SideBar=()=> {
 
-   const [open,setOpen]=useState(true)
+ 
    const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 767px)").matches);
    
 

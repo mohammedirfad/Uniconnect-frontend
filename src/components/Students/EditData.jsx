@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useLocation, useParams } from 'react-router-dom';
-import { useNavigate,Link } from 'react-router-dom';
-import { StudentRegister, UpdateStudent, getStudent } from '../../Api/Services/Student';
-import { UniversityLogin } from '../../Api/Services/UniversityAuth';
+import {  useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import {  UpdateStudent, getStudent } from '../../Api/Services/Student';
+
 import { ToastContainer, toast } from 'react-toastify';
 
 function EditData() {
@@ -13,7 +13,7 @@ function EditData() {
   const [users, setUsers] = useState([]);
   
   const [imageModified, setImageModified] = useState(false); 
-  const [searchTerm , setSearchTerm] =useState("");
+
 
 const [error, setError] = useState(null);
   const ids = useSelector(state => state?.UniversityAuth?.id);

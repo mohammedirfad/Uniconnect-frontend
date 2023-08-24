@@ -10,7 +10,7 @@ export default function Register() {
     const [password, setPassword] = useState('');
     const [universityType, setUniversityType] = useState('public');
     const [location, setLocation] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
+
 
     const [errors, setErrors] = useState({});
 
