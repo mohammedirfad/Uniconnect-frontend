@@ -38,7 +38,7 @@ const [error, setError] = useState(null);
     };    
       fetchUser();
  
- }, []);
+ }, [token]);
 
 
 
@@ -137,7 +137,7 @@ const [error, setError] = useState(null);
     e.preventDefault();
     try{
         if (validateInputs()) {
-            const modifiedFormData = { ...formData };
+      
             if (!imageModified) {
                
                 formData.image = users[0]?.Image;

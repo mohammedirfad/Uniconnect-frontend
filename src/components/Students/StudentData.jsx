@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import loadgifs from '../../../src/Assets/loadgif.gif';
 // import { getPaymentRequests } from '../../api/Services/HostsetUp';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { DelStudent, getStudentList } from '../../Api/Services/Student';
 
@@ -34,7 +34,7 @@ function StudentData() {
       };
 
       fetchUser();
-  }, [currentPage]);
+  }, [currentPage,token]);
 
 
      if (isLoading) {
@@ -106,7 +106,7 @@ function StudentData() {
                     {/* <td className='p-3 text-sm text-gray-700 whitespace-nowrap' onClick={()=>navigate(`/viewAndpay/${data.carData}`,{state:{amount:data.amount,orderId:data?._id}})} ><button className='font-bold text-blue-500 hover:underline text-lg'  >view and pay</button></td> */}
                     {/* <ViewApprove open={isOpen} setOpen={setIsOpen} carData={hostData[count]}  token={token} /> */}
                     <td className='p-3 text-sm text-gray-700 whitespace-nowrap' ><span className={`p-1.5 text-xs font-medium uppercase tracking-wider w-6 h-6
-                    'text-green-800 bg-green-200'  rounded-lg bg-opacity-50`}><img src={data.Image} alt='image' className='w-6 h-6 rounded-full'></img></span></td>
+                    'text-green-800 bg-green-200'  rounded-lg bg-opacity-50`}><img src={data.Image} alt='im' className='w-6 h-6 rounded-full'></img></span></td>
                     
                     <td className={`p-3 text-sm  text-gray-700 whitespace-nowrap`} >{data.StudentName }</td>
                     <td className={`p-3 text-sm  text-gray-700 whitespace-nowrap`} >{data.Age}</td>

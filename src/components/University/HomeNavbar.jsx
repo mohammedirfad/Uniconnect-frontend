@@ -1,7 +1,7 @@
 import React from 'react'
 import { GiBurningForest } from 'react-icons/gi';
 import { useNavigate } from 'react-router-dom';
-import { setLogin, setLogout } from '../../store/features/authSlice';
+import { setLogout } from '../../store/features/authSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 function HomeNavbar() {
