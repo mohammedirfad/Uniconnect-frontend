@@ -39,7 +39,7 @@ const [error, setError] = useState(null);
     };    
       fetchUser();
  
- }, [token,id]);
+ }, [token,id,error]);
 
 
 
